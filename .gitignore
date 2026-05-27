@@ -1,0 +1,21 @@
+# Python venvs
+.venv/
+.venv-f5/
+__pycache__/
+*.pyc
+
+# Local state (per-machine, contains absolute paths and machine-specific records)
+state/processed.json
+state/run-log.json
+
+# Generated outputs (audio, models, training artifacts — never check in)
+output/
+runs/
+datasets/
+voice-models/
+drop-zone/
+
+# Editor
+.DS_Store
+.vscode/
+.idea/

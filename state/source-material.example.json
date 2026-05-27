@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "yt-EXAMPLE_ID",
+      "title": "Example reference video (replace with your own rights-cleared source)",
+      "url": "https://www.youtube.com/watch?v=EXAMPLE_ID",
+      "type": "youtube",
+      "speaker": "TARGET_SPEAKER_NAME",
+      "priority": 1,
+      "expected_duration": "8:00",
+      "notes": "Why this source is useful for the target voice. Cover dialogue isolation, source quality, and any rights notes."
+    }
+  ]
+}
