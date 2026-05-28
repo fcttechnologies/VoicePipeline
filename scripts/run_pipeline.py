@@ -571,7 +571,7 @@ def run_pipeline(args: argparse.Namespace) -> RunResult:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the Jarvis voice-training automation.")
+    parser = argparse.ArgumentParser(description="Run the VoicePipeline end-to-end (acquire → normalize → transcribe → extract → train).")
     parser.add_argument("--smoke-test", action="store_true", help="Run a tiny sample and skip full training.")
     parser.add_argument("--skip-training", action="store_true", help="Build dataset only; do not invoke the training step.")
     parser.add_argument("--train-only", action="store_true", help="Train F5-TTS on the existing v{dataset_version} dataset without acquiring new source audio.")
@@ -588,7 +588,7 @@ def main() -> int:
     args = parse_args()
     result = run_pipeline(args)
     digest = (
-        f"Jarvis Voice Training - {result.status}\n"
+        f"Voice Pipeline - {result.status}\n"
         f"Run: {result.run_id}\n"
         f"Source: {result.source_title or 'none'}\n"
         f"Clips: {result.clips_written}\n"
